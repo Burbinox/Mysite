@@ -1,0 +1,62 @@
+{% load static %}
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>Hubert Grobelny</title>
+
+
+	<link rel="stylesheet" href="{% static 'style_doswiadczenie.css' %} ">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  	<div class="nav-bar">
+        <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                	<li class="nav-item">
+						<a class="nav-link" href="strona_glowna">STRONA GŁÓWNA</a>
+                	</li>
+					<li class="nav-item">
+                    	<a class="nav-link" href="doswiadczenie">DOŚWIADCZENIE</a>
+					</li>
+                	<li class="nav-item">
+                    	<a class="nav-link" href="umiejetnosci">UMIEJĘTNOŚCI</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="hobby">HOBBY</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="kontakt">KONTAKT</a>
+					</li>
+             	 </ul>
+            </div>
+		</nav>
+	</div>
+	<div id="container">
+		{% for praca in prace %}
+		<div class="zdjecie">
+			<img src="{{praca.zdjecie}}" width="450" height="300" >
+		</div>
+		<div class="nazwa">
+			<a>{{praca.nazwa}}</a>
+		</div>
+		<div class="czas_pracy">
+			<a>{{praca.czas_pracy}}</a>
+		</div>
+		<div class="opis">
+			<a>{{praca.opis}}</a>
+		</div>
+		<div style="clear: both;"></div>
+		{% endfor %}
+	</div>
+</body>
+</html>

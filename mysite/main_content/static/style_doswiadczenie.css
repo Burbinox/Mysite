@@ -1,0 +1,69 @@
+body
+{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url(tlo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white !important;
+}
+
+.nav-bar{
+    top: 0;
+    position: sticky;
+    z-index:2;
+}
+
+.navbar{
+
+    background-color: black;
+}
+
+.nav-bar .fa-bars{
+
+    font-size: 35px;
+    color: white;
+}
+
+.nav-link{
+    color: white !important;
+}
+
+#container
+{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.zdjecie
+{
+    margin: 20px;
+    float: left;
+}
+
+.nazwa
+{
+    margin: 20px;
+    float: left;
+    text-align: center;
+    height: 25px;
+    font-size: 25px;
+}
+
+.czas_pracy
+{
+    font-size: 25px;
+    margin: 20px;
+    float: left;
+    text-align: center;
+    height: 25px;
+}
+
+.opis
+{
+    text-align: center;
+    margin: 20px;
+    float: left;
+    font-size: 20px;
+}

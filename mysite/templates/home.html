@@ -1,0 +1,95 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hubert Grobelny</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %} ">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/fontello.css' %} ">
+
+</head>
+<body>
+    <div class="nav-bar">
+        <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">O MNIE</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="doswiadczenie">DOŚWIADCZENIE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="umiejetnosci">UMIEJĘTNOŚCI</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="hobby">HOBBY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kontakt">KONTAKT</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+    <section id="header">
+        <div class="container text-center">
+            <div class="user-box">
+                <img class="zdjecie" src="{% static 'tytulowe_zdjecie.jpg' %}">
+                <h1>Hubert Grobelny</h1>
+                <p>Tester Automatyczny oraz Web Developer</p>
+
+            </div>
+        </div>
+    </section>
+    <section id="user-info">
+          <div class="about container" id="about">
+              <div class="row">
+                  <div class="col-md-6 text-center">
+                    <img class="zdjecie" src="{% static 'cos.jpg' %}">
+
+                  </div>
+                  <div class="col-md-6">
+                    <h3> O mnie </h3>
+                    <p>Nazywam się Hubert Grobelny, mam 23 lata. Studiowałem na Politechnice
+                        Wrocławskiej na kierunku Automotyka i Robotyka. Aktualnie pracuję w Nokii
+                        na stanowisku Test Automation Working Student, gdzie głównymi używanymi przez mnie technologiami są:
+                        Python, Linux, Jenkins oraz Robot Framwework. Poza pracą rozwijam swoje umiejętności w takich obszarach
+                        jak JavaScript, Python, Django oraz szeroko pojęty hacking.
+                        W wolnych chwilach lubię obejrzeć mecz piłki nożnej lub pójść na siłownie.
+                        Preferuję aktywny tryb życia i nigdy się nie nudzę.
+                    </p>
+                  </div>
+              </div>
+          </div>
+        <!--
+       <div class="social-icons">
+            <ul>
+                <a href="https://www.linkedin.com/in/hubert-grobelny-3b3575176/"><li><i class="fa fa-linkedin"></i></li></a>
+                <a href="https://www.facebook.com/hubert.grobelny"><li><i class="fa fa-facebook"></i></li></a>
+                <a href="https://www.instagram.com/hubert.dzik/"><li><i class="fa fa-instagram"></i></li></a>
+                <a href="https://github.com/Burbinox"><li><i class="fa fa-github"></i></li></a>
+            </ul>
+        </div>
+        -->
+                  </div>
+              </div>
+          </div>
+    </section>
+    <script src="{% static 'smooth-scroll.js' %}"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+
+</body>
+</html>
